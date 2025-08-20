@@ -1,37 +1,122 @@
-@media(max-width: 1280px) {
+/* --- RESPONSIVIDADE (src/css/responsivo.css) --- */
+@media (max-width: 768px) {
     .cabecalho {
-        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+        padding: 15px;
+    }
+
+    .cabecalho .logo {
+        margin-bottom: 15px;
+    }
+
+    .cabecalho .menu ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 8px; /* Espaçamento menor entre itens do menu */
+    }
+
+    .cabecalho .menu li a {
+        padding: 8px 15px;
+        font-size: 16px;
     }
 
     .home {
         flex-direction: column;
-        align-items: center;
-        margin: 50px 0;
+        padding: 40px 15px;
+        text-align: center;
         gap: 30px;
     }
 
     .home .informacoes {
         max-width: 100%;
+        padding: 0;
         text-align: center;
-        align-items: center;
     }
 
-    .projetos .container-projetos {
-        padding: 0 30px;
-    }
-}
-
-@media (max-width: 425px) {
     .home .informacoes h1 {
-        font-size: 30px;
+        font-size: 2.2em;
     }
-    .home .informacoes p{
-        font-size: 16px;
+
+    .home .informacoes h2 {
+        font-size: 1.5em;
     }
-    .home .container-foto img{
-        max-width: 320px;
+
+    .home .apresentacao-texto {
+        font-size: 1em;
     }
-    .projetos{
-        padding: 30px;
+
+    .home .redes-sociais {
+        justify-content: center;
+    }
+
+    .home .container-foto {
+        margin-top: 20px;
+        order: -1; /* Coloca a foto acima do texto em mobile */
+    }
+
+    .home .container-foto .foto {
+        max-width: 280px; /* Foto um pouco menor em mobile */
+        padding: 8px;
+    }
+    
+    .secao-conteudo {
+        padding: 40px 15px;
+        margin-top: 15px; /* Reduz espaçamento entre seções em mobile */
+    }
+
+    .secao-conteudo .titulo {
+        font-size: 1.8em;
+        margin-bottom: 30px;
+        padding-bottom: 8px;
+    }
+
+    .secao-conteudo .titulo::after {
+        width: 70px;
+        height: 3px;
+    }
+
+    .habilidades-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .habilidade-categoria {
+        max-width: 100%;
+        padding: 25px;
+    }
+
+    .habilidade-categoria h3 {
+        font-size: 1.4em;
+        margin-bottom: 15px;
+    }
+
+    .item-formacao, .experiencia-item,
+    .cursos-container ul li, .premios-container ul li, .idiomas-container ul li {
+        padding: 15px 20px;
+        font-size: 0.95em;
+        max-width: 100%;
+    }
+
+    .experiencia-item ul {
+        margin-left: 20px;
+    }
+
+    .cursos-titulo {
+        margin-top: 40px;
+    }
+
+    .contato {
+        padding: 40px 15px;
+        margin-top: 20px;
+    }
+
+    .contato p {
+        font-size: 1em;
+    }
+
+    .rodape {
+        padding: 15px 0;
+        font-size: 0.8em;
     }
 }
